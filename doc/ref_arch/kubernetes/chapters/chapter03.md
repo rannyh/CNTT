@@ -16,7 +16,6 @@
     * [3.2.2 Container Networking Services](#3.2.2)
     * [3.2.3 Container Storage Services](#3.2.3)
     * [3.2.4 Container Package Managers](#3.2.4)
-* [3.3 Heading](#3.3)
 
 <a name="3.1"></a>
 ## 3.1 Introduction
@@ -27,7 +26,7 @@ Kubernetes is already very well documented at [https://kubernetes.io/docs/home/]
 
 This reference architecture provides optionality in terms of pluggable components such as service mesh and other plugins that might be used, however the focus of the reference architecture is on the abstracted interfaces and features that are required for workload management and execution.
 
-Chapter 5 of the Reference Model (RM) describes the [hardware](../../../ref_model/ref_model/chapters/chapter05.md#5.4) and [software](../../../ref_model/ref_model/chapters/chapter05.md#52-nfvi-sw-profiles-features-and-requirements) profiles, which are descriptions of the capabilities and features that the NFVI offer to the workloads. As of v2.0, Figure 5-3 in the RM (also shown below) depicts a high level view of the software profile features that apply to each instance profile (Basic, Network Intensive, Compute Intensive). For more information on the instance profiles please read [RM Chapter 4, section 4.2.4](../../../ref_model/chapters/chapter04.md#4.2.4).
+Chapter 5 of the Reference Model (RM) describes the [hardware](../../../ref_model/ref_model/chapters/chapter05.md#5.4) and [software](../../../ref_model/ref_model/chapters/chapter05.md#52-nfvi-sw-profiles-features-and-requirements) profiles, which are descriptions of the capabilities and features that the NFVI offer to the workloads. As of v2.0, Figure 5-3 in the RM (also shown below) depicts a high level view of the software profile features that apply to each instance profile (Basic and Network Intensive). For more information on the instance profiles please read [RM Chapter 4, section 4.2.4](../../../ref_model/chapters/chapter04.md#4.2.4).
 
 <p align="center"><img src="../../../ref_model/figures/RM_chap5_fig_5_3_SW_profile.png" width="80%"/></p>
 <p align="center"><b>Figure 5-3 (from RM):</b> NFVI software profiles</p>
@@ -38,8 +37,6 @@ In addition, Figure 5-4 (also shown below) depicts the hardware profile features
 <p align="center"><b>Figure 5-4 (from RM):</b> NFVI hardware profiles and host associated capabilities</p>
 
 These features and capabilities that are described in the software and hardware profiles are considered throughout this RA, with traceability of the RA requirements to the RM requirements formally captured in [chapter 2, section 2.2](./chapter02.md#2.2) of this RA.
-
-> As this RA is developed, it is quite possible that modifications to the RM are requested in order to make the RM more technology agnostic (i.e. to cater for VMs and Containers) or to add container-specific specifications to the RM.
 
 <a name="3.2"></a>
 ## 3.2 Infrastructure Services
